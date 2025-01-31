@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Panel de Control</h1>
+        <div class="welcome-message">
+            <h2>{{ mensaje }}</h2>
+        </div>
+        <div class="dashboard-options">
+            <a href="{{ url_for('ejercicio1') }}" class="button ejercicio1">Ir a Cálculo de Compras</a>
+            <a href="{{ url_for('index') }}" class="button ejercicio2">Volver al Inicio</a>
+        </div>
+    </div>
+</body>
+</html> 
